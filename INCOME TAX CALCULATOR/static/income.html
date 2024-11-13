@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="back.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="header">
+            <header class="y">
+                <h1 class="title"> TAX <b>CALCULATOR  </b></h1>
+                <h4 class="title-2 num">+91 9078988970 </h4>
+                <h4 class="title-2 mail">Taxcalc@gmail.com</h4>
+            </header>
+        </div>
+
+
+        <div class="main">
+            <div class="container c1">
+
+
+                <div class="block">
+                    <h4 class="x">Enter gross annual income</h4>
+                    <svg class="hover1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                    </svg>
+                    <input id="gross" class="ifield gross" type="text">
+                </div>
+
+                <div class="block">
+                    <h4 class="x">Enter extra income</h4>
+                    <svg class="hover2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                    </svg>
+                    <input id="extra" class="ifield extra" type="text">
+                </div>
+
+                <div class="block">
+                    <h4 class="x">Enter age group</h4>
+                    <svg class="hover3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                    </svg>
+                    <input id="age" class="ifield age" type="number">
+                </div>
+
+                <div class="block">
+                    <h4 class="x">Enter total applicable deductions</h4>
+                    <svg class="hover4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                    </svg>
+                    <input id="deduction" class="ifield deduction" type="text">
+                </div>
+
+                <div class="x">
+                    <button type="button" id="subbtn" class="btn btn-light felement">SUBMIT</button>
+                </div>
+
+
+            </div>
+
+            <div class="info container c2">
+                <h5 class="info x">*If overall income is less than 8 lakh , then not taxed </h5><br><BR>
+                <h5 class="info x">*If overall income >8alkhs with age less than 40 , you <br>will be taxed 30 %</h5>
+                <br><BR>
+                <h5 class="info x">*If overall income >8alkhs with age greater tahn 40 and <br>less than 60 , you will
+                    be taxed 40 %</h5><br><BR>
+                <h5 class="info x">*If overall income >8alkhs with age greater than 60 , you <br>will be taxed 10 %</h5>
+                <BR>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="tooltip">
+
+        <div class="check one">
+            <h5 class="gross-info">Gross annual <br>income is your total <br>salary in a year <br>before any
+                <br>deductions
+            </h5>
+        </div>
+
+        <div class="check two">
+            <h5 class="extra-info">Extra income <br>is the income <br>from other sources<br></h5>
+        </div>
+
+        <div class="check three">
+            <h5 class="age-info">Choose the <br>age group in <br>which your age lies </h5>
+        </div>
+
+        <div class="check four">
+            <h5 class="deductions-info">Provide the <br>applicable dedcution <br>on the income</h5>
+        </div>
+
+    </div>
+    <div class="result">
+        <button id="close" class="close">&times;</button>
+        <h1 class="total-income">TOTAL INCOME</h1>
+        <h2 class="total-incom">$2000</h2>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
